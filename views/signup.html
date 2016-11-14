@@ -1,0 +1,60 @@
+<div class="container">
+	<div class="row">
+		<form ng-submit="signup.createUser(signup.user)" class="col-md-4">
+			<h1>Venta</h1>
+			<h3>Datos de pelicula</h3>
+			<div class="form-group">
+				<label for="">Pelicula</label>
+				<input class="form-control" ng-model="signup.user.nombrepelicula" type="text" required>
+			</div>
+
+			<div class="form-group">
+				<label for="">Duracion</label>
+				<input class="form-control" ng-model="signup.user.duracionpelicula" type="text" required placeholder="140">
+			</div>
+
+			<div class="form-group">
+				<label for="">Estreno</label>
+				<input class="form-control" ng-model="signup.user.tipoestreno" type="text" required placeholder="E para estreno, N para no">
+			</div>
+
+			<div class="form-group">
+				<label for="">Horario de pelicula</label>
+				<input class="form-control" ng-model="signup.user.horapelicula" type="text" required placeholder="00:00">
+			</div>
+			<div class="form-group">
+				<label for="">Sala:</label>
+				<input class="form-control" ng-model="signup.user.salapelicula" type="text" required >
+			</div>
+            <h3>Datos de cliente</h3>
+            <div class="form-group">
+				<label for="">Nombre:</label>
+				<input class="form-control" ng-model="signup.user.nombrecliente" type="text" required >
+			</div>
+			<div class="form-group">
+				<label for="">DNI:</label>
+				<input class="form-control" ng-model="signup.user.dnicliente" type="text" required placeholder="12345678">
+			</div>
+
+
+			<h3>Entradas</h3>
+			 <div class="form-group">
+				<label for="">Cantidad:</label>
+				<input class="form-control" ng-model="signup.user.cantidad" type="text" required >
+			</div>
+			 <div class="form-group">
+				<label for="">Asiento:</label>
+				<input class="form-control" ng-model="signup.user.asiento" type="text" required placeholder="A05,A06">
+			</div>
+			 <div class="form-group">
+				<label for="">Tipo de pago:</label>
+				<input class="form-control" ng-model="signup.user.tipopago" type="text" required placeholder="EFECTIVO o TARJETA">
+			</div>
+			<div class="form-group">
+				<label for="">Tipo de pago:</label>
+				<input class="form-control" ng-model="signup.user.montopago" type="text" required placeholder="123">
+			</div>
+			<button type="submit" class="btn btn-success">Vender</button>
+		</form>
+	</div>
+</div>

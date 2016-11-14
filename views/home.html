@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">	
+
+		<div class="list-users" ng-repeat="user in home.users">
+			<h2>Boleta: {{ user.id }}</h2>
+			<p>Pelicula: {{ user.nombrepelicula }}</p>
+			<p>Duracion: {{ user.duracionpelicula }} min</p>
+			<p># de entradas: {{ user.cantidad }}</p>
+			<p>Cliente: {{ user.nombrecliente }}</p>
+			<p>DNI: {{ user.dnicliente }}</p>
+			<p>Estreno: {{ user.tipoestreno }}</p>
+			<p>Hora: {{ user.horapelicula }}</p>
+			<p>Asiento(s): {{ user.asiento }}</p>
+			<p>Tipo de pago: {{ user.tipopago }}</p>
+			<p>Total: {{ user.montopago }}</p>
+		</div>
+
+	</div>
+</div>
